@@ -1,6 +1,8 @@
 # PCssak Jamak - Official Windows Downloads
 
-[한국어](README.ko.md) · [Product website](https://pcssak.com/jamak) · [Install guide](docs/INSTALLATION.md) · [Latest release](https://github.com/pcssakinc/pcssak-jamak-releases/releases/latest)
+**Languages:** English · [한국어](README.ko.md)
+
+[Product website](https://pcssak.com/jamak) · [Install guide](docs/INSTALLATION.md) · [Latest release](https://github.com/pcssakinc/pcssak-jamak-releases/releases/latest)
 
 **Create, review, translate, style, and burn subtitles on your Windows PC.** PCssak Jamak brings local transcription, cue editing, subtitle styling, optional local AI translation, and video burn-in into one workflow.
 
@@ -13,8 +15,8 @@
 
 ## Download
 
-Jamak v0.1.0 is being prepared as a **Free Early Access** release for Windows x64. When an
-approved release is available, download only from the
+Jamak v0.1.0 is available as a **Free Early Access** release for Windows x64. Download only from
+the
 [latest official release](https://github.com/pcssakinc/pcssak-jamak-releases/releases/latest) or
 the [PCssak Jamak product page](https://pcssak.com/jamak).
 
