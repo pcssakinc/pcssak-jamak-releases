@@ -1,0 +1,78 @@
+name: Feature request / 기능 제안
+description: Describe a recurring subtitle-workflow problem before proposing a solution / 해결책보다 반복되는 자막 작업 문제를 알려주세요
+title: "[Feature] "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        PCssak Jamak prioritizes a clear local workflow, output safety, privacy, accessibility, and user confidence ahead of feature count. A recurring problem and desired outcome are more useful than a long list of buttons.
+
+        PCssak Jamak은 기능 수보다 분명한 로컬 작업 흐름, 출력 안전, 개인정보, 접근성과 사용자 신뢰를 우선합니다. 긴 버튼 목록보다 반복되는 문제와 원하는 결과를 알려주세요.
+  - type: textarea
+    id: user-problem
+    attributes:
+      label: User problem / 사용자 문제
+      description: Who encounters the problem, in which subtitle workflow, and what does it cost in time, accuracy, or confidence? / 누가 어떤 자막 작업에서 겪으며 시간·정확성·신뢰에 어떤 손해가 있나요?
+    validations:
+      required: true
+  - type: textarea
+    id: current-workaround
+    attributes:
+      label: Current workaround / 현재 해결 방법
+      description: How do you complete the task safely today? / 지금은 이 작업을 어떻게 안전하게 끝내나요?
+  - type: textarea
+    id: desired-outcome
+    attributes:
+      label: Desired outcome / 원하는 결과
+      description: Describe the completed user outcome, not only a button, model, or implementation. / 버튼·모델·구현 방법보다 사용자가 끝내야 하는 결과를 설명하세요.
+    validations:
+      required: true
+  - type: dropdown
+    id: workflow
+    attributes:
+      label: Main workflow / 주요 작업 흐름
+      options:
+        - Installation and component setup / 설치·구성요소 준비
+        - Transcription / 전사
+        - Cue and timeline editing / 자막 큐·타임라인 편집
+        - Translation and terminology / 번역·용어 사전
+        - Styling, preview, and karaoke / 스타일·미리보기·카라오케
+        - Subtitle export / 자막 내보내기
+        - Video burn-in / 영상 번인
+        - Recovery and project continuity / 복구·작업 연속성
+        - Accessibility and localization / 접근성·UI 번역
+        - Other / 기타
+    validations:
+      required: true
+  - type: dropdown
+    id: audience
+    attributes:
+      label: Main audience / 주요 사용자
+      options:
+        - Beginner or occasional user / 초보·가끔 사용하는 사람
+        - Video creator or streamer / 영상 창작자·스트리머
+        - Translator or subtitle editor / 번역가·자막 편집자
+        - Educator or student / 교육자·학생
+        - Accessibility workflow / 접근성 작업 사용자
+        - Small team or freelancer / 소규모 팀·프리랜서
+        - Other / 기타
+    validations:
+      required: true
+  - type: textarea
+    id: privacy-safety
+    attributes:
+      label: Privacy, output-safety, and resource considerations / 개인정보·출력 안전·자원 고려사항
+      description: Could this affect local-only processing, original files, overwrite behavior, recovery, network downloads, disk space, CPU/GPU load, model size, or confidential subtitles? / 로컬 처리·원본 파일·덮어쓰기·복구·네트워크 다운로드·저장 공간·CPU/GPU 부하·모델 크기·비공개 자막에 영향이 있나요?
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation / 확인
+      options:
+        - label: I searched existing requests and described a real recurring problem. / 기존 제안을 검색했고 실제로 반복되는 문제를 설명했습니다.
+          required: true
+        - label: I removed media content, subtitle text, personal paths, filenames, secrets, customer data, license keys, and confidential information. / 미디어 내용·자막 문구·개인 경로·파일명·비밀정보·고객 자료·라이선스 키·회사 비밀을 제거했습니다.
+          required: true

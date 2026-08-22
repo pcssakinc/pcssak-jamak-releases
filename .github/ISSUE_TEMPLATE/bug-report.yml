@@ -1,0 +1,162 @@
+name: Bug report / 버그 제보
+description: Report a safely reproduced PCssak Jamak problem / 안전하게 재현한 문제를 알려주세요
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve Free Early Access. Search existing issues first. Never upload original media, private subtitles, full personal paths, filenames, customer data, credentials, license keys, or confidential work. For an exploitable security issue, stop here and follow SECURITY.md instead.
+
+        무료 얼리액세스 개선에 도움을 주셔서 감사합니다. 기존 이슈를 먼저 검색하세요. 원본 미디어, 비공개 자막, 전체 개인 경로, 실제 파일명, 고객 자료, 자격증명, 라이선스 키나 회사 비밀을 올리지 마세요. 악용 가능한 보안 문제는 공개하지 말고 SECURITY.md를 따르세요.
+  - type: input
+    id: app-version
+    attributes:
+      label: App version / 앱 버전
+      description: Check the version shown by Jamak. / Jamak에 표시된 버전을 확인하세요.
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: windows-environment
+    attributes:
+      label: Windows environment / Windows 환경
+      options:
+        - Windows 11 Home x64
+        - Windows 11 Pro x64
+        - Windows 10 22H2 Home x64
+        - Windows 10 22H2 Pro x64
+        - Unsupported or unknown environment / 미지원 또는 모르는 환경
+    validations:
+      required: true
+  - type: input
+    id: windows-build
+    attributes:
+      label: Windows build / Windows 빌드
+      description: Enter only the version shown by winver; remove device and account names. / winver의 버전만 적고 기기명·계정명은 지우세요.
+      placeholder: "26100.x"
+  - type: dropdown
+    id: install-source
+    attributes:
+      label: Install source / 설치 출처
+      options:
+        - Official pcssakinc GitHub release / 공식 pcssakinc GitHub 릴리스
+        - Official PCssak Jamak product page / 공식 PCssak Jamak 제품 페이지
+        - Other or unknown / 기타 또는 모름
+    validations:
+      required: true
+  - type: dropdown
+    id: installer-language
+    attributes:
+      label: Installer and app language / 설치기·앱 언어
+      options:
+        - English / 영어
+        - Korean / 한국어
+        - Japanese / 일본어
+        - Simplified Chinese / 중국어 간체
+        - Traditional Chinese / 중국어 번체
+        - Russian / 러시아어
+        - Brazilian Portuguese / 포르투갈어(브라질)
+        - Latin American Spanish / 스페인어(라틴아메리카)
+        - German / 독일어
+        - French / 프랑스어
+        - Other or unknown / 기타 또는 모름
+    validations:
+      required: true
+  - type: dropdown
+    id: affected-workflow
+    attributes:
+      label: Affected workflow / 문제가 생긴 작업
+      options:
+        - Installation, startup, or removal / 설치·시작·제거
+        - Engine or model download / 엔진·모델 다운로드
+        - Media or subtitle import / 미디어·자막 가져오기
+        - Transcription / 전사
+        - Cue or timeline editing / 자막 큐·타임라인 편집
+        - Local translation / 로컬 번역
+        - Style, preview, or subtitle export / 스타일·미리보기·자막 내보내기
+        - Video burn-in / 영상 번인
+        - Recovery session or settings / 복구 세션·설정
+        - Interface, accessibility, or translation / 화면·접근성·UI 번역
+        - Other / 기타
+    validations:
+      required: true
+  - type: textarea
+    id: hardware-components
+    attributes:
+      label: Safe hardware and component details / 안전한 하드웨어·구성요소 정보
+      description: Include CPU, memory, GPU and driver, engine/model, and CPU/CUDA path. Do not include serial numbers or personal paths. / CPU·메모리·GPU·드라이버·엔진/모델·CPU/CUDA 경로를 적되 일련번호와 개인 경로는 제외하세요.
+    validations:
+      required: true
+  - type: textarea
+    id: media-characteristics
+    attributes:
+      label: Non-sensitive media characteristics / 민감하지 않은 미디어 특성
+      description: Container, codecs, duration, resolution, languages, and subtitle format only. Do not attach the original content. / 컨테이너·코덱·길이·해상도·언어·자막 형식만 적고 원본 내용은 첨부하지 마세요.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened? / 어떤 문제가 생겼나요?
+      description: Describe the actual result and user impact without media or subtitle content. / 미디어·자막 내용 없이 실제 결과와 사용자 영향을 적어주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result / 기대한 결과
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Safest minimal reproduction steps / 가장 안전한 최소 재현 절차
+      description: Use synthetic media and subtitles. Do not repeat a step that could overwrite or lose output. / 합성 미디어·자막을 사용하고 덮어쓰기·손실 위험이 있는 단계는 반복하지 마세요.
+      placeholder: |
+        1. Create a short synthetic file...
+        2. Open PCssak Jamak...
+        3. Choose...
+        4. Observe...
+    validations:
+      required: true
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: Frequency / 발생 빈도
+      options:
+        - Every safe attempt / 안전하게 시도할 때마다
+        - Often / 자주
+        - Sometimes / 가끔
+        - Once; not repeated because of output risk / 한 번, 출력 위험 때문에 반복하지 않음
+        - Unknown / 모름
+    validations:
+      required: true
+  - type: dropdown
+    id: output-safety
+    attributes:
+      label: Media and output safety / 미디어·출력 안전 결과
+      options:
+        - Original and existing output were unchanged / 원본과 기존 출력이 바뀌지 않음
+        - Operation safely refused or cancelled / 작업이 안전하게 거부·취소됨
+        - Preview and exported result differed / 미리보기와 내보낸 결과가 다름
+        - Existing output may have changed unexpectedly; not retried / 기존 출력이 예상 밖으로 바뀐 가능성, 재시도하지 않음
+        - Recovery session may be missing or stale / 복구 세션이 없거나 오래된 상태일 수 있음
+        - Other or unknown / 기타 또는 모름
+    validations:
+      required: true
+  - type: textarea
+    id: safe-evidence
+    attributes:
+      label: Sanitized error text or safe evidence / 정리한 오류 문구 또는 안전한 자료
+      description: Replace paths, filenames, subtitle text, and media thumbnails with synthetic values. / 경로·파일명·자막 문구·미디어 화면은 합성 값으로 바꾸세요.
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation / 확인
+      options:
+        - label: I searched existing issues and safely reproduced this on the latest available release when practical. / 기존 이슈를 검색했고 가능한 경우 최신 공개 버전에서 안전하게 재현했습니다.
+          required: true
+        - label: I removed original media, subtitle content, personal paths, filenames, secrets, customer data, license keys, and confidential information. / 원본 미디어·자막 내용·개인 경로·파일명·비밀정보·고객 자료·라이선스 키·회사 비밀을 제거했습니다.
+          required: true
+        - label: This is not an exploitable security report; security details will be sent privately under SECURITY.md. / 악용 가능한 보안 제보가 아니며 보안 내용은 SECURITY.md에 따라 비공개로 보냅니다.
+          required: true

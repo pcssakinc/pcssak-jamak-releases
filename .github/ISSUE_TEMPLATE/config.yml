@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security report / 보안 제보
+    url: https://github.com/pcssakinc/pcssak-jamak-releases/security/policy
+    about: Do not post exploitable details publicly. Read SECURITY.md and email support@pcssak.com privately. / 악용 가능한 내용은 공개하지 말고 SECURITY.md를 읽은 뒤 support@pcssak.com으로 비공개 연락하세요.
