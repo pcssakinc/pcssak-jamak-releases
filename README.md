@@ -1,6 +1,6 @@
 # PCssak Jamak - Official Windows Downloads
 
-[한국어](README.ko.md) · [Product website](https://pcssak.com/jamak) · [Install guide](docs/INSTALLATION.md) · [Latest release](https://github.com/pcssakinc/pcssak-jamak-releases/releases/latest)
+[한국어](README.ko.md) · [Product website](https://pcssak.com/jamak) · [Install guide](docs/INSTALLATION.md) · [v0.1.0 release](https://github.com/pcssakinc/pcssak-jamak-releases/releases/tag/v0.1.0)
 
 **Create, review, translate, style, and burn subtitles on your Windows PC.** PCssak Jamak brings local transcription, cue editing, subtitle styling, optional local AI translation, and video burn-in into one workflow.
 
@@ -13,10 +13,11 @@
 
 ## Download
 
-Jamak v0.1.0 is being prepared as a **Free Early Access** release for Windows x64. When an
-approved release is available, download only from the
-[latest official release](https://github.com/pcssakinc/pcssak-jamak-releases/releases/latest) or
-the [PCssak Jamak product page](https://pcssak.com/jamak).
+Jamak v0.1.0 was publicly released on August 22, 2026 as **Free Early Access** for Windows x64.
+Download it only through the
+[official fixed v0.1.0 release](https://github.com/pcssakinc/pcssak-jamak-releases/releases/tag/v0.1.0)
+or the [PCssak Jamak safe download page](https://pcssak.com/jamak/download), and confirm the
+exact installer filename and SHA-256 before running it.
 
 - Use only `PCssak-Jamak-Beta-Windows-x64-Setup.exe` for the x64 Early Access installer.
 - Do not use an MSI, x86, ARM64, portable, mirror, repackaged, or similarly named file.

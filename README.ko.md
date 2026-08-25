@@ -1,6 +1,6 @@
 # PCssak Jamak - 공식 Windows 다운로드
 
-[English](README.md) · [제품 홈페이지](https://pcssak.co.kr/jamak) · [설치 안내](docs/INSTALLATION.ko.md) · [최신 릴리스](https://github.com/pcssakinc/pcssak-jamak-releases/releases/latest)
+[English](README.md) · [제품 홈페이지](https://pcssak.co.kr/jamak) · [설치 안내](docs/INSTALLATION.ko.md) · [v0.1.0 릴리스](https://github.com/pcssakinc/pcssak-jamak-releases/releases/tag/v0.1.0)
 
 **Windows PC 한 대에서 자막을 만들고, 검수하고, 번역하고, 꾸미고, 영상에 입힙니다.** PCssak Jamak은 로컬 음성 전사, 자막 큐 편집, 스타일, 선택형 로컬 AI 번역과 영상 번인을 한 작업 흐름으로 연결합니다.
 
@@ -12,9 +12,10 @@
 
 ## 다운로드
 
-Jamak v0.1.0은 Windows x64용 **무료 얼리액세스**로 준비합니다. 승인된 릴리스가 게시되면
-[최신 공식 릴리스](https://github.com/pcssakinc/pcssak-jamak-releases/releases/latest) 또는
-[PCssak Jamak 제품 페이지](https://pcssak.co.kr/jamak)에서만 내려받으세요.
+Jamak v0.1.0은 2026년 8월 22일 Windows x64용 **무료 얼리액세스**로 공개되었습니다.
+[공식 고정 v0.1.0 릴리스](https://github.com/pcssakinc/pcssak-jamak-releases/releases/tag/v0.1.0)
+또는 [PCssak Jamak 안전 다운로드 페이지](https://pcssak.co.kr/jamak/download)를 통해서만
+내려받고, 실행 전에 정확한 설치기 파일명과 SHA-256을 확인하세요.
 
 - x64 얼리액세스 설치기는 `PCssak-Jamak-Beta-Windows-x64-Setup.exe`만 사용합니다.
 - MSI, x86, ARM64, 포터블, 미러, 재패키징 또는 비슷한 이름의 파일은 사용하지 않습니다.
