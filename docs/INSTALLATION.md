@@ -14,7 +14,7 @@ This guide applies to the Windows x64 Free Early Access build. Download Jamak on
 4. Keep a separate backup of important media and subtitle files.
 5. Do not disable SmartScreen, Microsoft Defender, Smart App Control, or another security product.
 
-The v0.1.0 installer is not Windows Authenticode-signed. Windows can therefore show **Unknown
+The v0.1.1 installer is not Windows Authenticode-signed. Windows can therefore show **Unknown
 publisher** or a reputation warning even when the downloaded bytes match the official SHA-256.
 The hash confirms byte equality; it is not a code-signing certificate or a malware guarantee.
 
@@ -40,7 +40,7 @@ can use Microsoft's official WebView2 bootstrapper, which requires a network con
 optional whisper.cpp and llama.cpp packages require Microsoft's Visual C++ 2015-2022 x64 runtime.
 
 FFmpeg, transcription engines, models, and local-translation components are not bundled in the
-v0.1.0 installer. Install only the components you need from Jamak settings. Jamak obtains them
+v0.1.1 installer. Install only the components you need from Jamak settings. Jamak obtains them
 from the fixed upstream location documented for that release and verifies the pinned SHA-256
 before use. Large models require substantial download time, storage, memory, and sometimes GPU
 resources.
@@ -57,8 +57,11 @@ resources.
   verify the mandatory PCSSAK Tauri signature before installation.
 - The Tauri updater signature is separate from Windows Authenticode. A valid update signature
   does not remove the initial installer's Unknown publisher or SmartScreen warning.
-- The initial v0.1.0 publication does not offer itself as an update. Its endpoint remains
-  `204 No Content`; a verified v0.1.1 or later release can be offered with `200 OK` metadata.
+- The v0.1.1 endpoint remains `204 No Content` until the exact release assets, anonymous downloads,
+  hashes, and Tauri signature pass independent checks. An explicitly owner-authorized controlled
+  live trial may then offer v0.1.1 to an installed v0.1.0 app with `200 OK` metadata so the actual
+  upgrade can be tested. The result remains `NOT_RUN` until installation, restart, and the displayed
+  version succeed; a failure returns the endpoint to `204` immediately.
 
 If an update check fails, continue using the installed version or visit the official release page.
 Do not bypass signature verification, substitute another download URL, or install a repackaged

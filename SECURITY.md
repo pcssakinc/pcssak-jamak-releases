@@ -34,13 +34,13 @@ PCSSAK will triage reports by user impact, data-loss risk, exploitability, and r
 
 - Download only from this official `pcssakinc` repository or the PCSSAK product page linked by the same approved release.
 - Compare the installer with `SHA256SUMS.txt` from that exact release.
-- v0.1.0 is not Authenticode-signed. SHA-256 proves byte equality with the published file, not publisher identity or absence of malware.
+- v0.1.1 is not Authenticode-signed. SHA-256 proves byte equality with the published file, not publisher identity or absence of malware.
 - Do not disable SmartScreen, Microsoft Defender, Smart App Control, or another security product.
 - User media and subtitles are processed locally; Jamak has no telemetry or analytics upload.
 - User-initiated engine and model downloads use fixed upstream URLs and pinned SHA-256 values.
-- FFmpeg is downloaded directly from the pinned BtbN upstream release and is not included in or mirrored with the Jamak installer for v0.1.0.
+- FFmpeg is downloaded directly from the pinned BtbN upstream release and is not included in or mirrored with the Jamak installer for v0.1.1.
 - The local LLM server is intended to bind only to `127.0.0.1` and is cleaned up with the application process.
-- v0.1.0 does not install updates silently. It checks the fixed PCSSAK HTTPS endpoint and applies an update only after the user starts it and the mandatory Tauri signature validates against the public key embedded in the app. This updater signature is separate from the current Authenticode-unsigned status.
+- v0.1.1 does not install updates silently. It checks the fixed PCSSAK HTTPS endpoint and applies an update only after the user starts it and the mandatory Tauri signature validates against the public key embedded in the app. This updater signature is separate from the current Authenticode-unsigned status.
 
 These controls reduce risk but do not guarantee safety. Unsigned software, downloaded external executables, large AI models, loopback services, media decoders, codec libraries, and GPU runtimes can still have supply-chain, compatibility, or antivirus-detection risks.
 
@@ -65,8 +65,8 @@ These controls reduce risk but do not guarantee safety. Unsigned software, downl
 
 PCSSAK은 사용자 영향, 데이터 손실 위험, 악용 가능성과 재현 가능성을 기준으로 우선순위를 정하고 1인 운영 범위에서 조사하며 가능한 경우 수정과 회귀 검증을 준비합니다. 응답 시간·수정 기한·버그 바운티·CVE 발급·금전 보상을 보장하는 제도가 아닙니다.
 
-공식 설치 파일은 이 `pcssakinc` 저장소 또는 같은 승인 릴리스가 안내하는 PCSSAK 제품 페이지에서만 받고 같은 릴리스의 `SHA256SUMS.txt`와 비교하세요. v0.1.0은 Authenticode 미서명이며 SHA-256 일치는 공개 파일과 바이트가 같다는 뜻이지 게시자 신원이나 악성 코드 부재를 보증하지 않습니다. SmartScreen·Microsoft Defender·Smart App Control이나 다른 보안 제품을 끄지 마세요.
+공식 설치 파일은 이 `pcssakinc` 저장소 또는 같은 승인 릴리스가 안내하는 PCSSAK 제품 페이지에서만 받고 같은 릴리스의 `SHA256SUMS.txt`와 비교하세요. v0.1.1은 Authenticode 미서명이며 SHA-256 일치는 공개 파일과 바이트가 같다는 뜻이지 게시자 신원이나 악성 코드 부재를 보증하지 않습니다. SmartScreen·Microsoft Defender·Smart App Control이나 다른 보안 제품을 끄지 마세요.
 
-사용자 미디어와 자막은 로컬에서 처리되고 텔레메트리·분석 업로드가 없습니다. 사용자가 선택한 엔진·모델 다운로드는 고정된 상위 URL과 SHA-256을 사용합니다. FFmpeg는 v0.1.0 설치기에 포함하거나 PCSSAK이 미러링하지 않고 고정 BtbN 상위 릴리스에서 직접 내려받습니다. 로컬 LLM 서버는 `127.0.0.1`에만 바인딩하고 앱 프로세스와 함께 정리하도록 설계했습니다. v0.1.0은 업데이트를 조용히 자동 설치하지 않으며, PCSSAK 고정 HTTPS 엔드포인트에서 승인된 새 버전을 확인한 뒤 사용자가 시작하고 앱에 포함된 Tauri 공개키로 필수 서명을 검증한 경우에만 적용합니다. 이 업데이터 서명은 현재 Authenticode 미서명 상태와 별개입니다.
+사용자 미디어와 자막은 로컬에서 처리되고 텔레메트리·분석 업로드가 없습니다. 사용자가 선택한 엔진·모델 다운로드는 고정된 상위 URL과 SHA-256을 사용합니다. FFmpeg는 v0.1.1 설치기에 포함하거나 PCSSAK이 미러링하지 않고 고정 BtbN 상위 릴리스에서 직접 내려받습니다. 로컬 LLM 서버는 `127.0.0.1`에만 바인딩하고 앱 프로세스와 함께 정리하도록 설계했습니다. v0.1.1은 업데이트를 조용히 자동 설치하지 않으며, PCSSAK 고정 HTTPS 엔드포인트에서 승인된 새 버전을 확인한 뒤 사용자가 시작하고 앱에 포함된 Tauri 공개키로 필수 서명을 검증한 경우에만 적용합니다. 이 업데이터 서명은 현재 Authenticode 미서명 상태와 별개입니다.
 
 이 장치들은 위험을 줄이지만 안전을 보장하지 않습니다. 미서명 소프트웨어, 외부 실행 파일 다운로드, 대용량 AI 모델, 루프백 서비스, 미디어 디코더, 코덱 라이브러리와 GPU 런타임에는 공급망·호환성·백신 탐지 위험이 남을 수 있습니다.

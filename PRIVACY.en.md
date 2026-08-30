@@ -1,7 +1,7 @@
 # PCssak Jamak Privacy and Local Data Notice
 
-- Applies to: v0.1.0 Free Early Access
-- Last updated: August 22, 2026
+- Applies to: v0.1.1 Free Early Access
+- Last updated: August 30, 2026
 - Product display name: PCssak Jamak
 - App and web operator display name: PCSSAK
 - Privacy contact: privacy@pcssak.com
@@ -126,5 +126,5 @@ request process.
 ## Changes
 
 If the app's network or storage behavior changes, the date and applicable version of this notice
-will be updated. A future policy change does not retroactively treat continued use of v0.1.0 as
+will be updated. A future policy change does not retroactively treat continued use of v0.1.1 as
 consent to new data collection.

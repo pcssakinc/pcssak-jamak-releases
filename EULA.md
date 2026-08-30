@@ -1,7 +1,7 @@
 # 최종 사용자 사용권 계약(EULA)
 
 **PCssak Jamak — 무료 얼리액세스**
-버전 0.1.0 · 최종 수정일: 2026-08-22
+버전 0.1.1 · 최종 수정일: 2026-08-30
 제품 표시명: **PCssak Jamak**
 라이선스 제공자·배포 운영자 표시명: **PCSSAK**
 공식 계약·지원 연락처: support@pcssak.com
@@ -83,7 +83,7 @@ FFmpeg의 고정 다운로드 자산은 BtbN의 `autobuild-2026-07-31-14-10` 릴
 
 ## 8. 코드 서명과 보안 경고
 
-v0.1.0 얼리액세스 설치기와 앱은 코드 서명되지 않았습니다. Windows는 `알 수 없는 게시자` 또는 SmartScreen 경고를 표시할 수 있고, 조직 정책이나 Windows 11 Smart App Control은 실행을 완전히 차단할 수 있습니다. 사용자는 보안 기능을 끄거나 예외를 추가하기보다 공식 배포 위치와 게시된 SHA-256 체크섬을 확인한 뒤 설치 여부를 판단해야 합니다.
+v0.1.1 얼리액세스 설치기와 앱은 코드 서명되지 않았습니다. Windows는 `알 수 없는 게시자` 또는 SmartScreen 경고를 표시할 수 있고, 조직 정책이나 Windows 11 Smart App Control은 실행을 완전히 차단할 수 있습니다. 사용자는 보안 기능을 끄거나 예외를 추가하기보다 공식 배포 위치와 게시된 SHA-256 체크섬을 확인한 뒤 설치 여부를 판단해야 합니다.
 
 ## 9. 보증 부인
 
@@ -118,7 +118,7 @@ v0.1.0 얼리액세스 설치기와 앱은 코드 서명되지 않았습니다. 
 # End User License Agreement (EULA)
 
 **PCssak Jamak — Free Early Access**
-Version 0.1.0 · Last updated: August 22, 2026
+Version 0.1.1 · Last updated: August 30, 2026
 Product display name: **PCssak Jamak**
 License provider and distribution operator display name: **PCSSAK**
 Official contract and support contact: support@pcssak.com
@@ -240,7 +240,7 @@ offline license information you enter may also be stored locally. See
 
 ## 8. Code signing and security warnings
 
-The version 0.1.0 Early Access installer and app are not Authenticode code-signed. Windows may
+The version 0.1.1 Early Access installer and app are not Authenticode code-signed. Windows may
 show an `Unknown publisher` or SmartScreen warning, and organizational policy or Windows 11
 Smart App Control may block execution completely. Do not disable security features or add an
 exception merely to run Jamak. Decide whether to install only after verifying the official
