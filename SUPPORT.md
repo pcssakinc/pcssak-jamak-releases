@@ -21,7 +21,7 @@ Do not attach the original affected video, audio, subtitle, project folder, or f
 
 ## Common installation and component issues
 
-- **Unknown publisher or SmartScreen:** v0.1.0 is unsigned. Confirm the official source,
+- **Unknown publisher or SmartScreen:** v0.1.1 is unsigned. Confirm the official source,
   `PCssak-Jamak-Beta-Windows-x64-Setup.exe` filename, and SHA-256. Do not disable Windows security
   features or add a broad exclusion.
 - **WebView2 error or blank window:** apply Windows updates and install Microsoft's official [WebView2 Evergreen Runtime](https://developer.microsoft.com/microsoft-edge/webview2/).
@@ -32,14 +32,17 @@ Do not attach the original affected video, audio, subtitle, project folder, or f
 
 ## Support boundary
 
-- Windows 10 version 22H2 x64 and supported Windows 11 x64 Home/Pro are the v0.1.0 beta scope.
+- Windows 10 version 22H2 x64 and supported Windows 11 x64 Home/Pro are the v0.1.1 beta scope.
 - Windows 11 x64 with current security updates is recommended.
 - 32-bit Windows, ARM64, Windows S mode, Windows Server, macOS, Linux, Wine, unofficial repackaging, and user-modified engines or models are unsupported.
-- v0.1.0 does not install updates silently. It shows the current version, checks the fixed PCSSAK
+- v0.1.1 does not install updates silently. It shows the current version, checks the fixed PCSSAK
   HTTPS endpoint, and lets the user start a verified update when one is approved. If the check
-  fails, use the exact official GitHub release page without bypassing verification. The initial
-  v0.1.0 endpoint remains `204 No Content`; a verified v0.1.1 or later release can be offered.
-- All v0.1.0 features are free during this Early Access release. No future price, payment method, feature set, update, or 1.0 release is promised.
+  fails, use the exact official GitHub release page without bypassing verification. After the
+  published assets, anonymous downloads, hashes, and Tauri signature pass independent checks, an
+  owner-authorized controlled live trial may temporarily offer v0.1.1 to an installed v0.1.0 app.
+  The result remains `NOT_RUN` until the full update succeeds; a failure returns the endpoint to
+  `204 No Content` immediately.
+- All v0.1.1 features are free during this Early Access release. No future price, payment method, feature set, update, or 1.0 release is promised.
 
 ## 한국어
 
@@ -63,7 +66,7 @@ PCssak Jamak 무료 얼리액세스는 1인 개발자가 운영합니다. 문의
 
 자주 확인할 항목은 다음과 같습니다.
 
-- **알 수 없는 게시자·SmartScreen:** v0.1.0은 미서명입니다. 공식 출처,
+- **알 수 없는 게시자·SmartScreen:** v0.1.1은 미서명입니다. 공식 출처,
   `PCssak-Jamak-Beta-Windows-x64-Setup.exe` 파일명과 SHA-256을 확인하고 Windows 보안 기능을
   끄거나 넓은 예외를 추가하지 마세요.
 - **WebView2 오류·빈 화면:** Windows 업데이트를 적용하고 Microsoft 공식 [WebView2 Evergreen Runtime](https://developer.microsoft.com/microsoft-edge/webview2/)을 설치합니다.
@@ -72,11 +75,13 @@ PCssak Jamak 무료 얼리액세스는 1인 개발자가 운영합니다. 문의
 - **전사·번역 결과 문제:** AI 결과는 사람이 검수해야 합니다. 원본 내용 대신 언어·모델·CPU/CUDA 경로와 민감하지 않은 미디어 기술 정보를 적어주세요.
 - **예상하지 않은 출력 변경:** 추가 처리를 중지하고 원본 백업을 보존한 뒤 가장 작은 안전한 증거로 제보하세요. 덮어쓰기·손실 가능성이 있는 단계는 반복하지 마세요.
 
-v0.1.0 베타 지원 범위는 Windows 10 버전 22H2 x64와 지원 중인 Windows 11 x64 Home·Pro이며, 최신 보안 업데이트가 적용된 Windows 11 x64를 권장합니다. 32비트 Windows, ARM64, Windows S 모드, Windows Server, macOS, Linux, Wine, 비공식 재패키징과 사용자가 수정한 엔진·모델은 지원하지 않습니다.
+v0.1.1 베타 지원 범위는 Windows 10 버전 22H2 x64와 지원 중인 Windows 11 x64 Home·Pro이며, 최신 보안 업데이트가 적용된 Windows 11 x64를 권장합니다. 32비트 Windows, ARM64, Windows S 모드, Windows Server, macOS, Linux, Wine, 비공식 재패키징과 사용자가 수정한 엔진·모델은 지원하지 않습니다.
 
-v0.1.0은 업데이트를 조용히 자동 설치하지 않습니다. 현재 버전을 표시하고 PCSSAK 고정 HTTPS
+v0.1.1은 업데이트를 조용히 자동 설치하지 않습니다. 현재 버전을 표시하고 PCSSAK 고정 HTTPS
 엔드포인트를 확인하며 승인된 새 버전이 있을 때 사용자가 검증된 업데이트를 직접 시작합니다.
-확인이 실패하면 검증을 우회하지 말고 정확한 공식 GitHub 릴리스 페이지를 확인하세요. 최초
-v0.1.0 엔드포인트는 `204 No Content`를 유지하며 검증된 v0.1.1 이상부터 제공할 수 있습니다.
-v0.1.0의 모든 기능은 이번 얼리액세스에서 무료지만 향후 가격·결제 방식·기능 구성·업데이트나
+확인이 실패하면 검증을 우회하지 말고 정확한 공식 GitHub 릴리스 페이지를 확인하세요. v0.1.1
+공개 자산·익명 다운로드·해시·Tauri 서명을 독립 검증한 뒤에는 출시 소유자가 승인한 제한
+실운영 시험에서 설치된 v0.1.0 앱에 v0.1.1을 제공할 수 있습니다. 전체 업데이트가 성공하기
+전까지 결과는 `NOT_RUN`이며, 실패하면 엔드포인트를 즉시 `204 No Content`로 되돌립니다.
+v0.1.1의 모든 기능은 이번 얼리액세스에서 무료지만 향후 가격·결제 방식·기능 구성·업데이트나
 1.0 출시는 약속하지 않습니다.

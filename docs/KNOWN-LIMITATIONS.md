@@ -4,7 +4,7 @@
 
 ## Free Early Access status
 
-- Jamak v0.1.0 is Free Early Access below version 1.0. Features, layouts, translations, component
+- Jamak v0.1.1 is Free Early Access below version 1.0. Features, layouts, translations, component
   sources, model support, file behavior, and system requirements can change before a stable release.
 - Undiscovered defects, crashes, performance problems, transcription errors, mistranslations,
   subtitle timing mistakes, rendering differences, and compatibility issues can remain.
@@ -21,7 +21,7 @@
   unless an applicable ESU program covers the device.
 - A successful build or startup does not prove compatibility with every Windows update, GPU,
   driver, codec, media container, security product, language, policy, or storage configuration.
-- The v0.1.0 installer is not Windows Authenticode-signed and can show Unknown publisher,
+- The v0.1.1 installer is not Windows Authenticode-signed and can show Unknown publisher,
   SmartScreen, Smart App Control, or organization-policy blocking. Do not disable security controls.
 - The current-user installer normally needs no administrator rights. A managed environment can
   still require administrator or IT approval for WebView2, runtime installation, policy changes,
@@ -52,14 +52,14 @@
 ## Video processing and external components
 
 - Video burn-in uses an optional FFmpeg build obtained directly from the pinned upstream BtbN
-  release. FFmpeg is not bundled or mirrored by PCSSAK in v0.1.0.
+  release. FFmpeg is not bundled or mirrored by PCSSAK in v0.1.1.
 - Media decoding and encoding can fail on damaged files, unsupported codecs, unusual timestamps,
   variable frame rates, protected media, large dimensions, insufficient disk space, or hardware and
   driver limitations.
 - H.264 output availability does not itself resolve every patent, licensing, delivery, or regional
   obligation for every user's project.
 - CPU and CUDA packages have different compatibility, download size, memory, speed, and antivirus
-  detection risks. Intel and AMD GPU acceleration is unsupported in v0.1.0.
+  detection risks. Intel and AMD GPU acceleration is unsupported in v0.1.1.
 
 ## Privacy and network boundary
 
@@ -77,9 +77,14 @@
 
 - Tauri update signatures are mandatory for the in-app update path but are separate from Windows
   Authenticode and SmartScreen reputation.
-- The initial v0.1.0 endpoint remains `204 No Content`; it must not offer v0.1.0 to the same v0.1.0
-  client. A newer v0.1.1 or later update is offered only after release assets, signature, hashes,
-  anonymous downloads, and installed upgrade behavior are independently verified.
+- The v0.1.1 endpoint remains `204 No Content` until release assets, hashes, anonymous downloads,
+  and the Tauri signature are independently verified. An explicitly owner-authorized controlled
+  live trial may then offer v0.1.1 to an installed v0.1.0 client. The end-to-end result remains
+  `NOT_RUN` until the actual update, restart, and displayed version succeed; a failure returns the
+  endpoint to `204` immediately.
+- The endpoint has no per-device enrollment. While it returns `200`, every v0.1.0 client that checks
+  for updates can receive the offer. Trial control therefore means a short monitored window,
+  `no-store` responses, and immediate rollback readiness rather than user-specific isolation.
 - If the update service is unavailable, Jamak should fail safely without replacing the installed
   application. Use only the official release page for a manual update.
 

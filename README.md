@@ -1,6 +1,6 @@
 # PCssak Jamak - Official Windows Downloads
 
-[한국어](README.ko.md) · [Product website](https://pcssak.com/jamak) · [Install guide](docs/INSTALLATION.md) · [v0.1.0 release](https://github.com/pcssakinc/pcssak-jamak-releases/releases/tag/v0.1.0)
+[한국어](README.ko.md) · [Product website](https://pcssak.com/jamak) · [Install guide](docs/INSTALLATION.md) · [Latest release](https://github.com/pcssakinc/pcssak-jamak-releases/releases/latest)
 
 **Create, review, translate, style, and burn subtitles on your Windows PC.** PCssak Jamak brings local transcription, cue editing, subtitle styling, optional local AI translation, and video burn-in into one workflow.
 
@@ -13,11 +13,9 @@
 
 ## Download
 
-Jamak v0.1.0 was publicly released on August 22, 2026 as **Free Early Access** for Windows x64.
-Download it only through the
-[official fixed v0.1.0 release](https://github.com/pcssakinc/pcssak-jamak-releases/releases/tag/v0.1.0)
-or the [PCssak Jamak safe download page](https://pcssak.com/jamak/download), and confirm the
-exact installer filename and SHA-256 before running it.
+Jamak v0.1.1 is published as a **Free Early Access** release for Windows x64. Download only from the
+[latest official release](https://github.com/pcssakinc/pcssak-jamak-releases/releases/latest) or
+the [PCssak Jamak product page](https://pcssak.com/jamak).
 
 - Use only `PCssak-Jamak-Beta-Windows-x64-Setup.exe` for the x64 Early Access installer.
 - Do not use an MSI, x86, ARM64, portable, mirror, repackaged, or similarly named file.
@@ -25,11 +23,11 @@ exact installer filename and SHA-256 before running it.
 - Confirm that the release also contains the Tauri updater `.sig`, `latest.json`, CycloneDX SBOM, and release notes for the same version.
 
 > [!WARNING]
-> The v0.1.0 installer and application are not Windows Authenticode-signed. Windows may show **Unknown publisher**, **Windows protected your PC**, or block execution under Smart App Control or organization policy. Do not disable SmartScreen, Microsoft Defender, Smart App Control, or another security product. Continue only after confirming the official source, exact filename, and SHA-256, and only on a PC where you accept the Early Access risk.
+> The v0.1.1 installer and application are not Windows Authenticode-signed. Windows may show **Unknown publisher**, **Windows protected your PC**, or block execution under Smart App Control or organization policy. Do not disable SmartScreen, Microsoft Defender, Smart App Control, or another security product. Continue only after confirming the official source, exact filename, and SHA-256, and only on a PC where you accept the Early Access risk.
 
-## What v0.1.0 does
+## What v0.1.1 does
 
-All features included in v0.1.0 are available without payment during this Early Access release:
+All features included in v0.1.1 are available without payment during this Early Access release:
 
 1. Local speech transcription with whisper.cpp, automatic language detection, and English-direction translation.
 2. Import SRT and VTT; edit cue text and timing; split, merge, insert, delete, search, undo, and redo.
@@ -49,7 +47,7 @@ This is not a promise about a future 1.0 release, pricing, payment method, suppo
   chooses to install an engine or model, or when Windows needs WebView2 during installation.
   Component downloads come from fixed upstream GitHub or Hugging Face locations and are checked
   against pinned SHA-256 values.
-- FFmpeg is not bundled in the Jamak installer or mirrored by PCSSAK for v0.1.0. The user-initiated component installer downloads the pinned GPL build directly from the upstream BtbN GitHub release. See [Third-party notices](THIRD-PARTY-NOTICES.md).
+- FFmpeg is not bundled in the Jamak installer or mirrored by PCSSAK for v0.1.1. The user-initiated component installer downloads the pinned GPL build directly from the upstream BtbN GitHub release. See [Third-party notices](THIRD-PARTY-NOTICES.md).
 
 Ordinary HTTPS connection metadata, such as an IP address and request headers, can be processed by GitHub, Hugging Face, or Microsoft when those downloads are requested. Jamak does not send the user's media file to those services.
 
@@ -63,8 +61,13 @@ Ordinary HTTPS connection metadata, such as an IP address and request headers, c
 - Original media and important subtitle files should be backed up before installation or use.
 - The app shows its current version and checks a fixed PCSSAK HTTPS endpoint for a verified newer version. When an update is available, the user explicitly starts the download and installation; the endpoint offers no update until publication is approved.
 - Independently of the Windows Authenticode status, an in-app update is verified against the Tauri public key embedded in the app and the mandatory `.sig`. Jamak does not apply an update if that verification fails.
-- Publishing the initial v0.1.0 installer does not offer v0.1.0 to itself. The update endpoint
-  remains `204 No Content`; a verified v0.1.1 or later release can be returned as a newer update.
+- The v0.1.1 update endpoint remains `204 No Content` until the exact GitHub assets, anonymous
+  downloads, hashes, and mandatory Tauri signature are independently verified. After those checks,
+  an explicitly owner-authorized controlled live trial may return the v0.1.1 manifest so an
+  installed v0.1.0 app can complete the end-to-end update test.
+- Until that live test confirms download, signature verification, installation, restart, and the
+  displayed v0.1.1 version, the end-to-end result remains `NOT_RUN` and must not be described as
+  verified. A failed trial or withdrawn release must return the endpoint to `204` immediately.
 
 See the [installation guide](docs/INSTALLATION.md), [known limitations](docs/KNOWN-LIMITATIONS.md),
 and [system requirements](SYSTEM_REQUIREMENTS.md) for setup, storage, memory, GPU, and runtime

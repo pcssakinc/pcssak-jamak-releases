@@ -1,6 +1,6 @@
 # PCssak Jamak - 공식 Windows 다운로드
 
-[English](README.md) · [제품 홈페이지](https://pcssak.co.kr/jamak) · [설치 안내](docs/INSTALLATION.ko.md) · [v0.1.0 릴리스](https://github.com/pcssakinc/pcssak-jamak-releases/releases/tag/v0.1.0)
+[English](README.md) · [제품 홈페이지](https://pcssak.co.kr/jamak) · [설치 안내](docs/INSTALLATION.ko.md) · [최신 릴리스](https://github.com/pcssakinc/pcssak-jamak-releases/releases/latest)
 
 **Windows PC 한 대에서 자막을 만들고, 검수하고, 번역하고, 꾸미고, 영상에 입힙니다.** PCssak Jamak은 로컬 음성 전사, 자막 큐 편집, 스타일, 선택형 로컬 AI 번역과 영상 번인을 한 작업 흐름으로 연결합니다.
 
@@ -12,10 +12,9 @@
 
 ## 다운로드
 
-Jamak v0.1.0은 2026년 8월 22일 Windows x64용 **무료 얼리액세스**로 공개되었습니다.
-[공식 고정 v0.1.0 릴리스](https://github.com/pcssakinc/pcssak-jamak-releases/releases/tag/v0.1.0)
-또는 [PCssak Jamak 안전 다운로드 페이지](https://pcssak.co.kr/jamak/download)를 통해서만
-내려받고, 실행 전에 정확한 설치기 파일명과 SHA-256을 확인하세요.
+Jamak v0.1.1은 Windows x64용 **무료 얼리액세스**로 공개 배포합니다.
+[최신 공식 릴리스](https://github.com/pcssakinc/pcssak-jamak-releases/releases/latest) 또는
+[PCssak Jamak 제품 페이지](https://pcssak.co.kr/jamak)에서만 내려받으세요.
 
 - x64 얼리액세스 설치기는 `PCssak-Jamak-Beta-Windows-x64-Setup.exe`만 사용합니다.
 - MSI, x86, ARM64, 포터블, 미러, 재패키징 또는 비슷한 이름의 파일은 사용하지 않습니다.
@@ -23,11 +22,11 @@ Jamak v0.1.0은 2026년 8월 22일 Windows x64용 **무료 얼리액세스**로 
 - 같은 버전의 Tauri 업데이터 `.sig`, `latest.json`, CycloneDX SBOM과 릴리스 노트도 릴리스에 있는지 확인합니다.
 
 > [!WARNING]
-> v0.1.0 설치기와 앱은 Windows Authenticode로 서명되지 않았습니다. Windows에 **알 수 없는 게시자**, **Windows의 PC 보호**가 표시되거나 Smart App Control·조직 정책이 실행을 막을 수 있습니다. SmartScreen, Microsoft Defender, Smart App Control이나 다른 보안 제품을 끄지 마세요. 공식 출처·정확한 파일명·SHA-256을 모두 확인하고 얼리액세스 위험을 받아들일 수 있는 개인 PC에서만 설치 여부를 판단하세요.
+> v0.1.1 설치기와 앱은 Windows Authenticode로 서명되지 않았습니다. Windows에 **알 수 없는 게시자**, **Windows의 PC 보호**가 표시되거나 Smart App Control·조직 정책이 실행을 막을 수 있습니다. SmartScreen, Microsoft Defender, Smart App Control이나 다른 보안 제품을 끄지 마세요. 공식 출처·정확한 파일명·SHA-256을 모두 확인하고 얼리액세스 위험을 받아들일 수 있는 개인 PC에서만 설치 여부를 판단하세요.
 
-## v0.1.0에서 할 수 있는 일
+## v0.1.1에서 할 수 있는 일
 
-v0.1.0에 포함된 모든 기능은 이번 얼리액세스에서 결제 없이 사용할 수 있습니다.
+v0.1.1에 포함된 모든 기능은 이번 얼리액세스에서 결제 없이 사용할 수 있습니다.
 
 1. whisper.cpp 기반 로컬 음성 전사, 자동 언어 감지와 영어 방향 번역
 2. SRT·VTT 가져오기, 자막 문구·시간 편집, 분할·병합·삽입·삭제·검색·실행 취소·다시 실행
@@ -46,7 +45,7 @@ v0.1.0에 포함된 모든 기능은 이번 얼리액세스에서 결제 없이 
 - 고정 업데이트 확인·사용자 승인 업데이트, 사용자가 엔진·모델 설치를 선택하거나 Windows
   설치 중 WebView2가 필요할 때 네트워크를 사용합니다. 구성요소는 고정된 GitHub·Hugging
   Face 상위 배포처에서 내려받고 고정 SHA-256으로 확인합니다.
-- v0.1.0 설치기에는 FFmpeg가 포함되지 않으며 PCSSAK이 FFmpeg를 미러링하지 않습니다. 사용자가 구성요소 설치를 선택하면 고정된 GPL 빌드를 BtbN GitHub 릴리스에서 직접 내려받습니다. 자세한 내용은 [제3자 고지](THIRD-PARTY-NOTICES.md)를 확인하세요.
+- v0.1.1 설치기에는 FFmpeg가 포함되지 않으며 PCSSAK이 FFmpeg를 미러링하지 않습니다. 사용자가 구성요소 설치를 선택하면 고정된 GPL 빌드를 BtbN GitHub 릴리스에서 직접 내려받습니다. 자세한 내용은 [제3자 고지](THIRD-PARTY-NOTICES.md)를 확인하세요.
 
 다운로드를 요청하면 GitHub, Hugging Face 또는 Microsoft가 IP 주소와 요청 헤더 같은 일반적인 HTTPS 연결 정보를 처리할 수 있습니다. Jamak은 사용자의 미디어 파일을 이 서비스들로 보내지 않습니다.
 
@@ -60,9 +59,12 @@ v0.1.0에 포함된 모든 기능은 이번 얼리액세스에서 결제 없이 
 - 설치·사용 전 원본 미디어와 중요한 자막 파일을 별도로 백업하세요.
 - 앱은 현재 버전을 표시하고 PCSSAK 고정 HTTPS 엔드포인트에서 검증된 새 버전을 확인합니다. 업데이트가 있을 때 사용자가 버튼을 눌러 내려받기·설치를 승인하며, 공개 승인된 업데이트가 없으면 엔드포인트는 아무 업데이트도 제안하지 않습니다.
 - Windows Authenticode 미서명 상태와 별개로, 앱 내 업데이트 설치기는 앱에 포함된 Tauri 공개키와 필수 `.sig`로 검증합니다. 이 서명이 없거나 맞지 않으면 업데이트를 적용하지 않습니다.
-- 최초 v0.1.0 설치기를 공개해도 v0.1.0에 같은 버전을 제안하지 않습니다. 업데이트
-  엔드포인트는 `204 No Content`를 유지하며 검증된 v0.1.1 이상부터 새 업데이트로 제공할 수
-  있습니다.
+- v0.1.1 업데이트 엔드포인트는 정확한 GitHub 자산·익명 다운로드·해시·필수 Tauri 서명을
+  독립 검증할 때까지 `204 No Content`를 유지합니다. 이 검증 뒤 출시 소유자가 명시적으로
+  승인한 제한 실운영 시험에서만 설치된 v0.1.0 앱에 v0.1.1 매니페스트를 제공할 수 있습니다.
+- 실운영 시험에서 다운로드·서명 검증·설치·재시작·v0.1.1 표시를 확인하기 전에는 종단 결과를
+  `NOT_RUN`으로 유지하고 검증 완료라고 안내하지 않습니다. 시험 실패나 릴리스 회수 시 즉시
+  엔드포인트를 `204`로 되돌립니다.
 
 [설치 안내](docs/INSTALLATION.ko.md), [알려진 한계](docs/KNOWN-LIMITATIONS.ko.md)와
 [시스템 요구사항](SYSTEM_REQUIREMENTS.md)에서 설치·저장 공간·메모리·GPU·런타임을 확인하세요.

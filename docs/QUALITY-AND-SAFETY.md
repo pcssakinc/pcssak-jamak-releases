@@ -41,7 +41,7 @@ has a fixed upstream source, expected archive type, pinned SHA-256, extraction a
 boundary, and executable invocation path. A mismatch, unexpected entry, incomplete download, or
 unsafe path must fail closed rather than bypass verification.
 
-FFmpeg is not bundled or mirrored in v0.1.0. The selected GPL build is obtained directly from the
+FFmpeg is not bundled or mirrored in v0.1.1. The selected GPL build is obtained directly from the
 documented BtbN release. whisper.cpp, llama.cpp, model weights, CUDA runtime files, WebView2, and
 the Visual C++ runtime remain subject to their own upstream licenses, security lifecycle, and
 compatibility limits.
@@ -74,14 +74,16 @@ The Tauri signature protects the in-app update path. It is not Windows Authentic
 Authenticode is adopted, Windows can identify the installer as an unknown publisher even when the
 Tauri signature and SHA-256 are correct.
 
-v0.1.0 is the initial install and does not update itself to the same version. The fixed homepage
-endpoint remains `204 No Content`. A v0.1.1 or later manifest can return `200 OK` only after the
-newer installer, signature, metadata, hashes, anonymous downloads, upgrade, restart, and displayed
-version have been verified end to end.
+The fixed homepage endpoint remains `204 No Content` until the published v0.1.1 installer,
+signature, metadata, hashes, and anonymous downloads pass independent checks. After those checks,
+an explicitly owner-authorized controlled live trial may return `200 OK` to an installed v0.1.0
+app so the upgrade can actually be tested. The end-to-end result remains `NOT_RUN` until download,
+signature verification, installation, restart, and the displayed version all succeed. A failed
+trial returns the endpoint to `204` immediately.
 
 ## Validation layers
 
-Release approval should record results for the exact candidate in each relevant layer:
+Release approval should record results for the exact release in each relevant layer:
 
 - frontend type checking, production build, Rust formatting, linting, unit and integration tests;
 - subtitle parsing, timing boundaries, split/merge/edit history, search, format conversion, style,
